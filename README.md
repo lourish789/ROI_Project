@@ -1,6 +1,6 @@
 # ROI_Project
 
-Team ROI will be building an ML Model to predict the JAMB scores of candidates baded on their features and performance.
+Team ROI built an ML Model to predict the JAMB scores of candidates based on their features and performance.
 
 Dataset source: https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb
 
