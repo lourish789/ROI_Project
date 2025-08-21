@@ -104,15 +104,16 @@ Open the provided local URL to test predictions interactively.
 Create a `requirements.txt` file with:
 
 ```txt
-pandas>=1.5.0
-numpy>=1.21.0
-scikit-learn>=1.1.0
-xgboost>=1.6.0
-catboost>=1.0.0
-lightgbm>=3.3.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-gradio>=3.0.0
+gradio
+pandas
+numpy
+scikit-learn
+xgboost
+catboost
+lightgbm 
+matplotlib
+seaborn
+
 ```
 
 Install all dependencies:
