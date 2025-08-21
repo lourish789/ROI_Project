@@ -1,173 +1,145 @@
-# ROI_Project; JAMB Performance Prediction Model
+# JAMB Performance Prediction Model
 
-Team ROI built a machine learning classification model to predict Nigerian students’ JAMB performance level; Below Average(0 - 199) , or Pass(200 - 400) based on 15 socio-academic features such as distance to school, type of school, teacher ratings, and study habits. 
+A machine learning classification model to predict Nigerian students' JAMB performance levels based on socio-academic features. This project helps identify at-risk learners and provides insights for improving exam outcomes.
 
-The goal is to provide insights that help students, teachers, and policymakers identify at-risk learners and improve exam outcomes.
+## 🎯 Project Overview
 
-# Table of Contents 
-## Project Structure 
-## Features 
-## Setup Instruction
-## Example Output
-## Impact
-## Requirements
+**Prediction Categories:**
+- **Below Average**: 0 - 199 points
+- **Pass**: 200 - 400 points
 
-Dataset source: https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb
+**Features Used:** 15 socio-academic indicators including:
+- Distance to school
+- Type of school attended
+- Teacher ratings
+- Study habits
+- And more...
 
-The more was built using the following framework;
-Python
-Jupyter Notebook 
-Gradio 
-Huggingface 
+**Live Demo:** [Try the model here](https://huggingface.co/spaces/Fluospark128/ROI_Project)
 
-We performed exploratory data analysis on the dataset to extract insights and check the relationship between the variables 
+## 📊 Dataset
 
+**Source:** [Kaggle - Students Performance in 2024 JAMB](https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb)
 
+## 🏗️ Project Structure
 
-
-
-To deploy the model, the model was saved to a pickle file file 
-
-Then, it was deployed via gradio on huggingfaces. here is the link tonthe web app; https://huggingface.co/spaces/Fluospark128/ROI_Project
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-## Project Structure
-
+```
+ROI_Project/
 ├── data/                 # Dataset files (CSV format)
 ├── notebooks/            # Jupyter notebooks for EDA and experiments
 ├── models/               # Saved ML models (pickle files)
 ├── jamb_prediction.py    # Training and evaluation script
+├── app.py               # Gradio deployment script
 ├── requirements.txt      # Python dependencies
-├── README.md             # Project documentation
+└── README.md            # Project documentation
+```
 
+## 🚀 Quick Start
 
----
+### 1. Clone the Repository
 
-## Features
-
-Multiple ML algorithms compared (Logistic Regression, Decision Trees, Random Forest, XGBoost, CatBoost, LGBM.)
-
-Hyperparameter tuning #with GridSearchCV / RandomizedSearchCV
-
-#Cross-validation for robust evaluation
-
-Metrics: Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
-
-Exported best model in .pkl format
-
-Deployment-ready with Gradio or Streamlit
-
-
-
----
-
-## Setup Instructions
-
-1. Clone the Repository
-
+```bash
 git clone https://github.com/lourish788/ROI_Project.git
-cd jamb-prediction
+cd ROI_Project
+```
 
-2. Create Virtual Environment & Install Dependencies
+### 2. Set Up Environment
 
+```bash
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate   # On Mac/Linux
-venv\Scripts\activate      # On Windows
 
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
+```
 
-3. Prepare Dataset
+### 3. Prepare Dataset
 
-Place your dataset file (e.g. jamb_exam_results.csv) inside the data/ folder.
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb)
+2. Place the CSV file in the `data/` folder
+3. Ensure the dataset contains all 15 required features
 
-Ensure the dataset has the required 15 features.
+### 4. Train the Model
 
-
-4. Train the Model
-
+```bash
 python jamb_prediction.py
+```
 
-This will:
+This script will:
+- ✅ Clean and preprocess the dataset
+- ✅ Train multiple ML algorithms (Logistic Regression, Random Forest, XGBoost, CatBoost, LGBM)
+- ✅ Perform hyperparameter tuning with GridSearchCV/RandomizedSearchCV
+- ✅ Run cross-validation for robust evaluation
+- ✅ Save the best model to `models/best_model.pkl`
 
-Clean and preprocess the dataset
+### 5. Deploy Locally
 
-Train multiple models (Logistic Regression, Random Forest, CatBoost, etc.)
-
-Run hyperparameter tuning and cross-validation
-
-Save the best model into models/best_model.pkl
-
-
-5. Evaluate the Model
-
-Evaluation metrics will be displayed in the terminal and saved to a results file.
-
-6. Deploy with Gradio
-
+```bash
 python app.py
+```
 
-Then open the local link to test predictions interactively.
+Open the provided local URL to test predictions interactively.
 
+## 📈 Model Performance
 
+- **Accuracy:** 77.7%
+- **Best Algorithm:** Logistic Regression
+- **Evaluation Metrics:** Precision, Recall, F1-Score, Confusion Matrix
 
----
+## 🛠️ Technologies Used
 
-## Example Output
+- **Python 3.8+**
+- **Machine Learning:** Scikit-learn, XGBoost, CatBoost, LightGBM
+- **Data Analysis:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Deployment:** Gradio, Hugging Face Spaces
+- **Development:** Jupyter Notebook
 
-Accuracy: 77.7%
+## 📋 Requirements
 
-Best Model: Logistic Regression
+Create a `requirements.txt` file with:
 
-Confusion Matrix: Shows correct/incorrect classifications across 3 performance categories
+```txt
+pandas>=1.5.0
+numpy>=1.21.0
+scikit-learn>=1.1.0
+xgboost>=1.6.0
+catboost>=1.0.0
+lightgbm>=3.3.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+gradio>=3.0.0
+jupyter>=1.0.0
+```
 
-
-
----
-
-## Impact
-
-This model can:
-
-Help teachers identify at-risk students early
-
-Guide parents in supporting children
-
-Assist NGOs and policymakers in targeting interventions
-
-
-
----
-
-## Requirements
-
-Python 3.8+
-
-Pandas, NumPy, Scikit-learn, CatBoost, XGBoost
-
-Matplotlib, Seaborn (for visualization)
-
-Gradio or Streamlit (for deployment)
-
-
-Install them via:
-
+Install all dependencies:
+```bash
 pip install -r requirements.txt
+```
 
+## 🎯 Impact & Applications
 
----
+This model can help:
+- **Teachers:** Identify at-risk students early for targeted support
+- **Parents:** Understand factors affecting their children's performance
+- **Policymakers:** Design data-driven educational interventions
+- **NGOs:** Target resources effectively for maximum impact
+
+## 🔄 Reproduction Steps
+
+1. **Fork/Clone** this repository
+2. **Download** the dataset from the provided Kaggle link
+3. **Set up** your Python environment with the required packages
+4. **Run** the training script to reproduce results
+5. **Deploy** using Gradio for interactive testing
+
+## 📧 Contact
+
+For questions or collaboration opportunities, please reach out through the GitHub repository.
 
