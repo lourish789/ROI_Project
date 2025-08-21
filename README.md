@@ -41,7 +41,7 @@ Then, it was deployed via gradio on huggingfaces. here is the link tonthe web ap
 
 ---
 
-##📂 Project Structure
+##Project Structure
 
 ├── data/                 # Dataset files (CSV format)
 ├── notebooks/            # Jupyter notebooks for EDA and experiments
@@ -53,7 +53,7 @@ Then, it was deployed via gradio on huggingfaces. here is the link tonthe web ap
 
 ---
 
-##⚙️ Features
+##Features
 
 Multiple ML algorithms compared (Logistic Regression, Decision Trees, Random Forest, XGBoost, CatBoost, LGBM.)
 
@@ -71,7 +71,7 @@ Deployment-ready with Gradio or Streamlit
 
 ---
 
-##🚀 Setup Instructions
+##Setup Instructions
 
 1. Clone the Repository
 
