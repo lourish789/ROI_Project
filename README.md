@@ -1,6 +1,8 @@
-# ROI_Project
+# ROI_Project; JAMB Performance Prediction Model
 
-Team ROI built an ML Model to predict the JAMB scores of candidates based on their features and performance.
+Team ROI built a machine learning classification model to predict Nigerian students’ JAMB performance level; Below Average(0 - 199) , or Pass(200 - 400) based on 15 socio-academic features such as distance to school, type of school, teacher ratings, and study habits. 
+
+The goal is to provide insights that help students, teachers, and policymakers identify at-risk learners and improve exam outcomes.
 
 Dataset source: https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb
 
@@ -30,11 +32,8 @@ Then, it was deployed via gradio on huggingfaces. here is the link tonthe web ap
 
 
 
-🎓 JAMB Performance Prediction Model
 
-This project builds a machine learning classification model to predict Nigerian students’ JAMB performance level (Below Average, Average, or Pass) based on 15 socio-academic features such as distance to school, type of school, teacher ratings, and study habits.
 
-The goal is to provide insights that help students, teachers, and policymakers identify at-risk learners and improve exam outcomes.
 
 
 ---
@@ -53,11 +52,11 @@ The goal is to provide insights that help students, teachers, and policymakers i
 
 ⚙️ Features
 
-Multiple ML algorithms compared (Logistic Regression, Random Forest, CatBoost, etc.)
+Multiple ML algorithms compared (Logistic Regression, Decision Trees, Random Forest, XGBoost, CatBoost, LGBM.)
 
-Hyperparameter tuning with GridSearchCV / RandomizedSearchCV
+Hyperparameter tuning #with GridSearchCV / RandomizedSearchCV
 
-Cross-validation for robust evaluation
+#Cross-validation for robust evaluation
 
 Metrics: Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
 
@@ -73,7 +72,7 @@ Deployment-ready with Gradio or Streamlit
 
 1. Clone the Repository
 
-git clone https://github.com/yourusername/jamb-prediction.git
+git clone https://github.com/lourish788/ROI_Project.git
 cd jamb-prediction
 
 2. Create Virtual Environment & Install Dependencies
@@ -117,13 +116,14 @@ python app.py
 Then open the local link to test predictions interactively.
 
 
+
 ---
 
 📊 Example Output
 
-Accuracy: 78%
+Accuracy: 77.7%
 
-Best Model: CatBoostClassifier
+Best Model: Logistic Regression
 
 Confusion Matrix: Shows correct/incorrect classifications across 3 performance categories
 
