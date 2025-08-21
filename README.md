@@ -61,7 +61,7 @@ pip install -r requirements.txt
 ### 3. Prepare Dataset
 
 1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb)
-2. Place the CSV file in the `data/` folder
+2. Place the CSV file in the folder
 3. Ensure the dataset contains all 15 required features
 
 ### 4. Train the Model
