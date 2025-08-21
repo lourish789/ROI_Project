@@ -26,9 +26,8 @@ A machine learning classification model to predict Nigerian students' JAMB perfo
 ```
 ROI_Project/
 ├── JAMB_exam_scores                 # Data (CSV format)
-├── JAMB_prediction.ipynb            # Jupyter notebook for EDA and model training
+├── JAMB_prediction.ipynb            # Jupyter notebook for EDA, model training and evaluation
 ├── model1.pkl               # Saved ML model (pickle file)
-├── jamb_prediction.py    # Training and evaluation script
 ├── app.py               # Gradio deployment script
 ├── requirements.txt      # Python dependencies
 └── README.md            # Project documentation
