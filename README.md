@@ -4,6 +4,9 @@ Team ROI built a machine learning classification model to predict Nigerian stude
 
 The goal is to provide insights that help students, teachers, and policymakers identify at-risk learners and improve exam outcomes.
 
+Table of Contents 
+Project Structure 
+
 Dataset source: https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb
 
 The more was built using the following framework;
@@ -38,7 +41,7 @@ Then, it was deployed via gradio on huggingfaces. here is the link tonthe web ap
 
 ---
 
-📂 Project Structure
+##📂 Project Structure
 
 ├── data/                 # Dataset files (CSV format)
 ├── notebooks/            # Jupyter notebooks for EDA and experiments
@@ -50,7 +53,7 @@ Then, it was deployed via gradio on huggingfaces. here is the link tonthe web ap
 
 ---
 
-⚙️ Features
+##⚙️ Features
 
 Multiple ML algorithms compared (Logistic Regression, Decision Trees, Random Forest, XGBoost, CatBoost, LGBM.)
 
@@ -68,7 +71,7 @@ Deployment-ready with Gradio or Streamlit
 
 ---
 
-🚀 Setup Instructions
+##🚀 Setup Instructions
 
 1. Clone the Repository
 
@@ -119,7 +122,7 @@ Then open the local link to test predictions interactively.
 
 ---
 
-📊 Example Output
+##📊 Example Output
 
 Accuracy: 77.7%
 
@@ -131,7 +134,7 @@ Confusion Matrix: Shows correct/incorrect classifications across 3 performance c
 
 ---
 
-🌍 Impact
+##🌍 Impact
 
 This model can:
 
@@ -145,7 +148,7 @@ Assist NGOs and policymakers in targeting interventions
 
 ---
 
-📌 Requirements
+##📌 Requirements
 
 Python 3.8+
 
