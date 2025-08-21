@@ -17,7 +17,7 @@ A machine learning classification model to predict Nigerian students' JAMB perfo
 
 **Live Demo:** [Try the model here](https://huggingface.co/spaces/Fluospark128/ROI_Project)
 
-## 📊 Dataset
+## Dataset
 
 **Source:** [Kaggle - Students Performance in 2024 JAMB](https://www.kaggle.com/datasets/idowuadamo/students-performance-in-2024-jamb)
 
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ### 4. Train the Model
 
 ```bash
-python jamb_prediction.py
+python JAMB_prediction.ipynb
 ```
 
 This script will:
