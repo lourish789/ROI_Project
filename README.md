@@ -26,7 +26,7 @@ A machine learning classification model to predict Nigerian students' JAMB perfo
 ```
 ROI_Project/
 ├── JAMB_exam_scores                 # Data (CSV format)
-├── JAMB_prediction.ipynb            # Jupyter notebook for EDA, model training and evaluation
+├── ROI(Final).ipynb            # Jupyter notebook for EDA, model training and evaluation
 ├── model1.pkl               # Saved ML model (pickle file)
 ├── app.py               # Gradio deployment script
 ├── requirements.txt      # Python dependencies
@@ -67,12 +67,12 @@ pip install -r requirements.txt
 ### 4. Train the Model
 
 ```bash
-python JAMB_prediction.ipynb
+python ROI(Final).ipynb
 ```
 
 This script will:
 - Clean and preprocess the dataset
-- Train multiple ML algorithms (Logistic Regression, Random Forest, XGBoost, CatBoost, LGBM)
+- Train multiple ML algorithms (Logistic Regression, Random Forest, Decision Tree, XGBoost, CatBoost, LGBM)
 - Perform hyperparameter tuning
 - Saved the best model to `model1.pkl`
 
